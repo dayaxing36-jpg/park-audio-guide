@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>林下露营区</title><link rel="stylesheet" href="../../assets/css/site.css"></head>
+<body><main class="shell">
+<section class="hero"><picture><source srcset="../../assets/images/p-c505b1/cover.webp" type="image/webp"><img src="../../assets/images/p-c505b1/cover.webp" alt="林下露营区" loading="eager"></picture></section>
+<section class="content"><div class="title-block"><p class="eyebrow">园区语音导览</p><h1 class="title">林下露营区</h1></div>
+
+<div class="audio-card"><p class="audio-title"><span class="play-dot">▶</span><span>语音讲解</span></p><audio controls autoplay playsinline preload="auto" data-autoplay src="../../assets/audio/p-c505b1.mp3"></audio><button class="auto-play-btn is-hidden" type="button">开始听讲解</button></div>
+<article class="text-card"><div class="article-kicker">点位介绍</div>
+<p>您现在来到的，是园区的林下露营区。大家可以看到，这里利用林木之间自然形成的开敞空间布置，地面较为平整，四周绿植环绕，头顶有树冠遮荫，既保留了林下环境的自然气息，也为帐篷搭建和户外活动留出了充足空间。</p>
+<p>这片场地可用于家庭露营、亲子互动、团队活动和户外课堂。天气适宜时，大家可以在这里搭起帐篷、铺开野餐垫，在树荫下休息交流；孩子们也可以观察树木、昆虫和天气变化，在真实的自然环境中认识四季、感受自然。</p>
+<p>搭建营地看似简单，其实也有不少学问。需要根据风向、地面情况和周边环境选择合适位置，整理好随身物资，并留意天气变化和活动安全。离开时记得要带走垃圾、恢复场地原貌，不损伤树木和植被。</p>
+<p>这里不仅是一处放松身心的林下休闲空间，也是一间开放的自然课堂。希望大家在露营和活动中学习观察、协作与自我保护，享受户外乐趣，也共同爱护这片林下环境。</p></article>
+<div class="nav"><a href="../p-d3d724/">上一处</a><a href="../p-1f91d2/">下一处</a></div><a class="home-link" href="../../">返回导览首页</a></section><footer class="footer">欢迎继续游览</footer></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  var a=document.querySelector("audio[data-autoplay]");
+  var btn=document.querySelector(".auto-play-btn");
+  if(!a)return;
+  function showBtn(){if(btn)btn.classList.remove("is-hidden");}
+  function hideBtn(){if(btn)btn.classList.add("is-hidden");}
+  function start(){var p=a.play();if(p&&p.then)p.then(hideBtn).catch(showBtn);}
+  a.addEventListener("play",hideBtn);
+  a.addEventListener("pause",function(){if(a.currentTime===0)showBtn();});
+  if(btn)btn.addEventListener("click",start);
+  document.addEventListener("touchstart",start,{once:true,passive:true});
+  document.addEventListener("click",start,{once:true});
+  window.addEventListener("pageshow",start);
+  start();
+});
+</script></body></html>

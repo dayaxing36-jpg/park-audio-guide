@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>名家门联</title><link rel="stylesheet" href="../../assets/css/site.css"></head>
+<body><main class="shell">
+<section class="hero"><picture><source srcset="../../assets/images/p-e386c0/cover.webp" type="image/webp"><img src="../../assets/images/p-e386c0/cover.webp" alt="名家门联" loading="eager"></picture></section>
+<section class="content"><div class="title-block"><p class="eyebrow">园区语音导览</p><h1 class="title">名家门联</h1></div>
+
+<div class="audio-card"><p class="audio-title"><span class="play-dot">▶</span><span>语音讲解</span></p><audio controls autoplay playsinline preload="auto" data-autoplay src="../../assets/audio/p-e386c0.mp3"></audio><button class="auto-play-btn is-hidden" type="button">开始听讲解</button></div>
+<article class="text-card"><div class="article-kicker">点位介绍</div>
+<p>门庭有联藏雅韵，框中见景浸书香。您此刻步入的名家门联区，是园区里一处融传统楹联文化、书法艺术与中式园林造景于一体的雅致去处。</p>
+<p>楹联也叫门联、对联，是中国人传承了上千年的经典文化形式。它最讲究对仗章法：上下联字数对等、词性相应、平仄相谐，短短数语自有规整的节奏与韵律，再配上风格各异的书法笔墨 —— 有的笔力遒劲厚重，有的字迹清雅舒展，有的行笔飘逸灵动，既是凝练的文学表达，也是鲜活的书法艺术。</p>
+<p>这些楹联的内容各有侧重：有的讲读书明理的治学之道，有的说谦和处世的立身之则，有的藏着耕读传家的家风期许，寥寥十几字，便装下了传袭世代的人生智慧与精神追求。</p>
+<p>这片区域最独到的巧思，是没有把楹联做成孤立的文化展板，而是完全融入了中式园林的造景逻辑里。一座座形制各异的中式门洞依次排布，既是串联不同景观空间的通道，也是一个个天然的立体画框。</p>
+<p>往前多走一步，框中的草木山石便换了一重模样：春有嫩枝探入框沿，夏有浓荫铺满画心，秋有黄叶添了暖色，冬有疏枝晕出淡墨，一步一景，恰是中式园林 “移步换景” 的精妙意趣。</p>
+<p>分列门侧的木刻楹联，又为眼前的自然景致补上了一层人文意境。看完门里的风景，再读门侧的联句，草木的意趣与文字的深意相映成趣，逛园子便不只是看山水花木，更是慢慢品藏在风景里的文化余味。</p>
+<p>不用赶行程，也不用刻意研读，缓步穿行即可。遇到合心意的联句驻足读两遍，喜欢的书法多停留片刻，寻常的游园步履间，便已接住了这份传袭千年的中式温润与雅致。</p>
+<p>温馨提示：请爱护门体与木刻楹联设施，请勿触摸、刻画楹联，共同守护文化景致。</p></article>
+<div class="nav"><a href="../p-c68f26/">上一处</a><a href="../p-eccdfa/">下一处</a></div><a class="home-link" href="../../">返回导览首页</a></section><footer class="footer">欢迎继续游览</footer></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  var a=document.querySelector("audio[data-autoplay]");
+  var btn=document.querySelector(".auto-play-btn");
+  if(!a)return;
+  function showBtn(){if(btn)btn.classList.remove("is-hidden");}
+  function hideBtn(){if(btn)btn.classList.add("is-hidden");}
+  function start(){var p=a.play();if(p&&p.then)p.then(hideBtn).catch(showBtn);}
+  a.addEventListener("play",hideBtn);
+  a.addEventListener("pause",function(){if(a.currentTime===0)showBtn();});
+  if(btn)btn.addEventListener("click",start);
+  document.addEventListener("touchstart",start,{once:true,passive:true});
+  document.addEventListener("click",start,{once:true});
+  window.addEventListener("pageshow",start);
+  start();
+});
+</script></body></html>

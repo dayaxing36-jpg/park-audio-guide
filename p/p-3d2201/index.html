@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>腊梅区</title><link rel="stylesheet" href="../../assets/css/site.css"></head>
+<body><main class="shell">
+<section class="hero"><picture><source srcset="../../assets/images/p-3d2201/cover.webp" type="image/webp"><img src="../../assets/images/p-3d2201/cover.webp" alt="腊梅区" loading="eager"></picture></section>
+<section class="content"><div class="title-block"><p class="eyebrow">园区语音导览</p><h1 class="title">腊梅区</h1></div>
+<aside class="intro-verse"><p>宝剑锋从磨砺出，梅花香自苦寒来。</p></aside>
+<div class="audio-card"><p class="audio-title"><span class="play-dot">▶</span><span>语音讲解</span></p><audio controls autoplay playsinline preload="auto" data-autoplay src="../../assets/audio/p-3d2201.mp3"></audio><button class="auto-play-btn is-hidden" type="button">开始听讲解</button></div>
+<article class="text-card"><div class="article-kicker">点位介绍</div>
+<p>这句耳熟能详的诗句，让人联想到的，正是眼前这片凌寒绽放的花木——蜡梅。蜡梅俗称腊梅，为蜡梅科蜡梅属落叶灌木，是我国传统的冬季观花植物。</p>
+<p>蜡梅多在隆冬至早春开花，常于百花凋零、寒意正浓之时绽放。它先花后叶，花朵呈蜡黄色，花瓣温润通透、质感如蜡，香气清幽而持久。冬日里，疏朗的枝条缀满明黄小花，暗香随风浮动，为略显沉寂的园林增添了一抹温暖明亮的色彩。</p>
+<p>蜡梅喜光、较耐寒，适应性较强，适宜栽植于庭院、公园和园林景观节点。它虽名中带“梅”，却与梅花并非同科植物；因花色似蜜蜡、香气与梅相近，且常在腊月前后开放，因而得名“蜡梅”。</p>
+<p>在中国传统文化中，蜡梅常被赋予坚韧、高洁、不畏严寒的品格。它不与百花争春，偏在寒冬中沉静蓄力，于最冷的时节吐露清香。正如世间许多美好，都要经历时间的沉淀与风霜的磨砺，才能绽放出属于自己的芬芳。</p></article>
+<div class="nav"><a href="../p-a4446c/">上一处</a><a href="../p-6c61d4/">下一处</a></div><a class="home-link" href="../../">返回导览首页</a></section><footer class="footer">欢迎继续游览</footer></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  var a=document.querySelector("audio[data-autoplay]");
+  var btn=document.querySelector(".auto-play-btn");
+  if(!a)return;
+  function showBtn(){if(btn)btn.classList.remove("is-hidden");}
+  function hideBtn(){if(btn)btn.classList.add("is-hidden");}
+  function start(){var p=a.play();if(p&&p.then)p.then(hideBtn).catch(showBtn);}
+  a.addEventListener("play",hideBtn);
+  a.addEventListener("pause",function(){if(a.currentTime===0)showBtn();});
+  if(btn)btn.addEventListener("click",start);
+  document.addEventListener("touchstart",start,{once:true,passive:true});
+  document.addEventListener("click",start,{once:true});
+  window.addEventListener("pageshow",start);
+  start();
+});
+</script></body></html>

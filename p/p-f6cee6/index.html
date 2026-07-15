@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>紫藤萝长廊</title><link rel="stylesheet" href="../../assets/css/site.css"></head>
+<body><main class="shell">
+<section class="hero"><picture><source srcset="../../assets/images/p-f6cee6/cover.webp" type="image/webp"><img src="../../assets/images/p-f6cee6/cover.webp" alt="紫藤萝长廊" loading="eager"></picture></section>
+<section class="content"><div class="title-block"><p class="eyebrow">园区语音导览</p><h1 class="title">紫藤萝长廊</h1></div>
+<aside class="intro-verse"><p>紫藤挂云木，花蔓宜阳春。密叶隐歌鸟，香风留美人。</p></aside>
+<div class="audio-card"><p class="audio-title"><span class="play-dot">▶</span><span>语音讲解</span></p><audio controls autoplay playsinline preload="auto" data-autoplay src="../../assets/audio/p-f6cee6.mp3"></audio><button class="auto-play-btn is-hidden" type="button">开始听讲解</button></div>
+<article class="text-card"><div class="article-kicker">点位介绍</div>
+<p>这是唐代诗人李白《紫藤树》中的诗句。紫藤攀木而生，花蔓迎着春光舒展，浓密枝叶间传来鸟鸣，清幽花香引人驻足。短短几句，写尽了紫藤柔婉灵动又蓬勃向上的春日生机。</p>
+<p>您眼前这条藤蔓缠绕、绿荫连绵的廊道，就是园区的紫藤萝景观长廊。</p>
+<p>紫藤又称紫藤萝，是豆科紫藤属落叶木质藤本。它的枝蔓粗壮，缠绕攀援能力强，常依附廊架、棚架等向上生长。每年四月至五月，紫藤进入主要花期，一串串紫色或淡紫色花穗从廊架间自然垂落，如云似霞，又仿佛一条流动的紫色瀑布，是园区春季极具代表性的花廊景观。</p>
+<p>即使错过盛花期，长廊也别有一番景致。入夏后，繁茂的枝叶沿廊架铺展，形成连片绿荫；粗壮的藤蔓蜿蜒交错，记录着多年生长的痕迹。漫步其间，既可观察攀援植物独特的生长方式，也可在清凉幽静的绿荫下歇脚赏景。</p>
+<p>紫藤在中国文化中常被赋予春意、雅致与蓬勃生命力。现代作家宗璞在散文《紫藤萝瀑布》中，由满架繁盛的紫藤花展开对生命的思考，使这帘紫花又多了一层坚韧、生生不息的精神意蕴。</p>
+<p>温馨提示：紫藤的豆荚、种子和茎皮含有毒性，请勿采摘、食用；游览时请勿攀爬廊架、拉扯藤蔓，共同爱护景观环境。</p></article>
+<div class="nav"><a href="../p-2528c5/">上一处</a><a href="../p-06f593/">下一处</a></div><a class="home-link" href="../../">返回导览首页</a></section><footer class="footer">欢迎继续游览</footer></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  var a=document.querySelector("audio[data-autoplay]");
+  var btn=document.querySelector(".auto-play-btn");
+  if(!a)return;
+  function showBtn(){if(btn)btn.classList.remove("is-hidden");}
+  function hideBtn(){if(btn)btn.classList.add("is-hidden");}
+  function start(){var p=a.play();if(p&&p.then)p.then(hideBtn).catch(showBtn);}
+  a.addEventListener("play",hideBtn);
+  a.addEventListener("pause",function(){if(a.currentTime===0)showBtn();});
+  if(btn)btn.addEventListener("click",start);
+  document.addEventListener("touchstart",start,{once:true,passive:true});
+  document.addEventListener("click",start,{once:true});
+  window.addEventListener("pageshow",start);
+  start();
+});
+</script></body></html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>农耕区</title><link rel="stylesheet" href="../../assets/css/site.css"></head>
+<body><main class="shell">
+<section class="hero"><picture><source srcset="../../assets/images/p-d3d724/cover.webp" type="image/webp"><img src="../../assets/images/p-d3d724/cover.webp" alt="农耕区" loading="eager"></picture></section>
+<section class="content"><div class="title-block"><p class="eyebrow">园区语音导览</p><h1 class="title">农耕区</h1></div>
+
+<div class="audio-card"><p class="audio-title"><span class="play-dot">▶</span><span>语音讲解</span></p><audio controls autoplay playsinline preload="auto" data-autoplay src="../../assets/audio/p-d3d724.mp3"></audio><button class="auto-play-btn is-hidden" type="button">开始听讲解</button></div>
+<article class="text-card"><div class="article-kicker">点位介绍</div>
+<p>您现在来到的，是园区的传统农耕体验区。这里集中呈现了鲁北地区的传统菜园风貌，也承载着一代代人的乡村生活记忆。</p>
+<p>菜园遵循四时节令，践行博华一直以来坚持的“顺应自然、生态循环、最小干预”的自然农法理念，轮作不同蔬菜，呈现从整地、播种、浇水、除草到采收的农作过程。种植过程中，不使用化学肥料、化学农药、除草剂及催熟剂，让蔬菜依循自然规律生长成熟。</p>
+<p>春种、夏长、秋收、冬藏，一方小小的菜园，既是观察自然、认识作物的生动课堂，也是感受劳动乐趣、重温乡土记忆的体验空间。</p>
+<p>区内还陈列着石碾、压水井、锄头、镰刀、簸箕等传统农具。锄头用于松土除草，镰刀用于清草收割，簸箕用于盛放、筛选和晾晒农产品；石碾与压水井，则见证了昔日乡村生产生活的日常。机械化普及以前，人们依靠双手辛勤劳作，循着节气安排农事。这些朴素的器具，凝结着先辈顺应节令、勤俭持家的生活智慧。</p>
+<p>农耕体验区将菜蔬种植、农具展示与乡村生活场景融为一体，既保留了传统农耕生活的质朴气息，也为亲子研学和劳动教育提供了生动载体。希望大家在认识农具、体验农事的过程中，读懂一粥一饭的来之不易，学会珍惜食物、尊重劳动、亲近土地。</p></article>
+<div class="nav"><a href="../p-a3aba9/">上一处</a><a href="../p-c505b1/">下一处</a></div><a class="home-link" href="../../">返回导览首页</a></section><footer class="footer">欢迎继续游览</footer></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  var a=document.querySelector("audio[data-autoplay]");
+  var btn=document.querySelector(".auto-play-btn");
+  if(!a)return;
+  function showBtn(){if(btn)btn.classList.remove("is-hidden");}
+  function hideBtn(){if(btn)btn.classList.add("is-hidden");}
+  function start(){var p=a.play();if(p&&p.then)p.then(hideBtn).catch(showBtn);}
+  a.addEventListener("play",hideBtn);
+  a.addEventListener("pause",function(){if(a.currentTime===0)showBtn();});
+  if(btn)btn.addEventListener("click",start);
+  document.addEventListener("touchstart",start,{once:true,passive:true});
+  document.addEventListener("click",start,{once:true});
+  window.addEventListener("pageshow",start);
+  start();
+});
+</script></body></html>
